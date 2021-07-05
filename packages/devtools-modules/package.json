@@ -11,7 +11,7 @@
   "license": "MPL-2.0",
   "dependencies": {
     "punycode": "^2.1.0",
-    "devtools-services": "0.0.1"
+    "devtools-services": "0.0.3"
   },
   "devDependencies": {
     "jest": "^23.0.0"
