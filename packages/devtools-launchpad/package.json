@@ -14,7 +14,9 @@
   "scripts": {
     "license-check": "devtools-license-check",
     "start": "node bin/dev-server",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "main": "src/index.js",
   "bin": {
@@ -92,7 +94,8 @@
     "webpack-dev-middleware": "^1.11.0",
     "webpack-env-loader-plugin": "^1.0.0",
     "webpack-hot-middleware": "^2.18.2",
-    "ws": "^1.0.1"
+    "ws": "^1.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^3.12.0",
@@ -126,5 +129,6 @@
     "transformIgnorePatterns": [
       "node_modules/(?!devtools-)"
     ]
-  }
+  },
+  "snyk": true
 }
